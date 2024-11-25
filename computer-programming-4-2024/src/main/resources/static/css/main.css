@@ -1,0 +1,19 @@
+.products {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.product {
+    border-top: 1px solid black;
+
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.product__price {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
