@@ -1,0 +1,14 @@
+wget http://adsk.dydaktyka.jkan.pl/_static/id_student
+chmod 600 id_student
+
+pierwszy krok 
+1. ssh-agent
+    *skopiowac z terminala
+    *wkleic skopiowana tresc
+
+2. ssh-agent
+    *the clever way
+    * eval `ssh-agent`
+    * lub eval $(ssh-agent)
+3. load my private key to memory
+    ssh-add {pathToYourPrivateKey}

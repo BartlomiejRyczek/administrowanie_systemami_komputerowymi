@@ -1,0 +1,25 @@
+---
+
+- name: "setup ecommerce"
+  hosts: ecommerce
+  become: yes
+  vars:
+    name: "Bartek"
+  tasks:
+    - name: "hello world"
+      file:
+        path: "~/hello_{{ name }}.txt"
+        state: touch
+    - name: "install java env"
+      dnf: 
+        name: java-17-amazon-corretto
+        state: latest
+#foo: boo
+#fooAsList: [boo, zoo]
+#fooAsListV2:
+#  - boo
+#  - zoo
+#fooAsListNestedObjects:
+#  - object1:
+#    foo: boo
+#    alphabet: [alpha, beta, gamma]
